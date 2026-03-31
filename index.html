@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peintre Paris — artisan peintre à Paris : peinture intérieure, ravalement, finitions. Devis gratuit. Intervention rapide en Île-de-France.">
+  <meta name="keywords" content="peintre Paris, artisan peintre, peinture intérieure Paris, ravalement, devis peinture">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Peintre Paris | Artisan peintre à Paris">
+  <meta property="og:description" content="Peinture et rénovation à Paris. Devis gratuit, travail soigné et délais respectés.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <title>Peintre Paris | Artisan peintre à Paris — Devis gratuit</title>
+  <link rel="canonical" href="https://www.peintre-paris.fr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Peintre Paris",
+    "description": "Artisan peintre à Paris : peinture intérieure, ravalement, finitions et rénovation.",
+    "telephone": "+33605642285",
+    "areaServed": { "@type": "City", "name": "Paris" },
+    "priceRange": "€€"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Le devis est-il gratuit et sans engagement ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui. Après votre demande, nous fixons une visite ou un échange pour estimer les surfaces et les finitions. Vous recevez un devis détaillé sans frais : vous restez libre d'accepter ou de comparer." }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps dure une intervention « type » ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cela dépend des pièces, de l'état des murs et des séchages entre couches. Un T2 peint en grande partie peut prendre quelques jours ouvrés ; nous vous indiquons une fourchette réaliste dès le devis." }
+      },
+      {
+        "@type": "Question",
+        "name": "Dois-je vider les pièces avant votre passage ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Les meubles doivent être éloignés du périmètre peint ou dégagés si possible. Nous protégeons sols et mobilier restant avec bâches et adhésifs adaptés ; nous précisons lors de la visite ce qui peut rester en place." }
+      },
+      {
+        "@type": "Question",
+        "name": "Intervenez-vous le week-end ou en soirée ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nous privilégions les horaires ouvrés pour limiter le bruit en copropriété. Des créneaux exceptionnels peuvent être étudiés selon la nature du chantier et l'accord des voisins — nous en parlons à la commande." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Peintre Paris — accueil">Peintre Paris</a>
+      <nav class="nav nav-desktop" aria-label="Navigation principale">
+        <a href="#services">Nos services</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#contact">Devis gratuit</a>
+      </nav>
+      <a href="tel:+33605642285" class="btn btn-primary header-call header-call-desktop" aria-label="Appeler le 06 05 64 22 85">06 05 64 22 85</a>
+      <button type="button" class="header-menu-toggle" id="header-menu-toggle" aria-expanded="false" aria-controls="header-menu" aria-label="Ouvrir le menu">
+        <span class="header-menu-toggle-bar" aria-hidden="true"></span>
+        <span class="header-menu-toggle-bar" aria-hidden="true"></span>
+        <span class="header-menu-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile : hors du <header> pour que position:fixed couvre bien la fenêtre (évite le bug avec transform/backdrop sur le header) -->
+  <div class="header-menu" id="header-menu" hidden>
+    <div class="header-menu-backdrop" tabindex="-1"></div>
+    <div class="header-menu-panel" role="dialog" aria-modal="true" aria-labelledby="header-menu-title">
+      <div class="header-menu-panel-header">
+        <p id="header-menu-title" class="visually-hidden">Menu</p>
+        <button type="button" class="header-menu-close" id="header-menu-close" aria-label="Fermer le menu">
+          <svg class="header-menu-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="nav nav-mobile" aria-label="Navigation principale">
+        <a href="#services">Nos services</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#contact">Devis gratuit</a>
+      </nav>
+      <a href="tel:+33605642285" class="btn header-call header-call-mobile" aria-label="Appeler le 06 05 64 22 85">06 05 64 22 85</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-blob hero-blob--1"></span>
+        <span class="hero-blob hero-blob--2"></span>
+        <span class="hero-blob hero-blob--3"></span>
+        <span class="hero-gridlines"></span>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content anim-fade-up">
+          <p class="hero-badge">Artisan peintre · Paris &amp; petite couronne</p>
+          <h1 id="hero-title">Votre peintre <span class="text-gradient">artisan</span> à Paris</h1>
+          <p class="hero-lead">Rénovation, peinture intérieure et finitions sur mesure. Un interlocuteur unique, des matériaux professionnels et un chantier laissé propre à chaque étape.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Devis gratuit</a>
+            <a href="#services" class="btn btn-outline">Nos services</a>
+          </div>
+        </div>
+        <div class="hero-visual anim-fade-up anim-delay-1">
+          <figure class="hero-figure">
+            <img src="public/images/expert-peinture.webp" width="640" height="800" alt="Artisan peintre expert appliquant de la peinture sur un mur intérieur" loading="eager" fetchpriority="high" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-intro" id="contact" aria-labelledby="intro-title">
+      <div class="section-intro-accent" aria-hidden="true"></div>
+      <div class="container two-col">
+        <div class="intro-cards">
+          <h2 id="intro-title" class="visually-hidden">Pourquoi nous écrire</h2>
+          <article class="card card-text anim-fade-up">
+            <h3 class="card-title">25 ans d’expérience</h3>
+            <p>Une pratique du métier d’artisan peintre ancrée à Paris : savoir-faire, conseils et réalisations adaptées aux immeubles anciens comme aux logements contemporains.</p>
+          </article>
+          <article class="card card-text anim-fade-up anim-delay-1">
+            <h3 class="card-title">Réactivité</h3>
+            <p>Nous répondons sous 24 h à votre demande et planifions une visite pour chiffrer votre projet avec précision.</p>
+          </article>
+          <article class="card card-text anim-fade-up anim-delay-2">
+            <h3 class="card-title">Transparence</h3>
+            <p>Devis détaillé, sans surprise : préparation des supports, couches, finitions et délais annoncés clairement.</p>
+          </article>
+          <article class="card card-text anim-fade-up anim-delay-3">
+            <h3 class="card-title">Garantie qualité</h3>
+            <p>Peintures adaptées à chaque pièce, respect des normes et finitions contrôlées avant remise des clés.</p>
+          </article>
+        </div>
+        <div class="contact-block anim-fade-up">
+          <p class="eyebrow">Parlons de votre projet</p>
+          <h2 class="section-heading">Demande de contact</h2>
+          <form class="contact-form" action="#" method="post" name="contact">
+            <div class="contact-form-row">
+              <div class="contact-field">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Votre nom">
+              </div>
+              <div class="contact-field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="vous@exemple.fr">
+              </div>
+            </div>
+            <div class="contact-form-row contact-form-row--full">
+              <div class="contact-field">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="06 00 00 00 00">
+              </div>
+            </div>
+            <div class="contact-form-row">
+              <div class="contact-field">
+                <label for="postal">Code postal</label>
+                <input type="text" id="postal" name="postal" required inputmode="numeric" autocomplete="postal-code" maxlength="9" placeholder="75000">
+              </div>
+              <div class="contact-field">
+                <label for="city">Ville</label>
+                <input type="text" id="city" name="city" required autocomplete="address-level2" placeholder="Paris">
+              </div>
+            </div>
+            <div class="contact-field contact-field--full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="3" required placeholder="Décrivez votre projet (surface, pièces, délai souhaité…)"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Envoyer la demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-services" id="services" aria-labelledby="services-title">
+      <div class="section-services-glow" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow center">Ce que nous faisons</p>
+        <h2 id="services-title" class="section-heading center">Nos services</h2>
+        <p class="section-sub center">Une offre complète pour la peinture et la rénovation à Paris et en petite couronne.</p>
+        <div class="services-grid">
+          <article class="card card-service anim-fade-up">
+            <img src="public/images/images-services/peinture%20inte%CC%81rieure.webp" width="400" height="285" alt="Peinture intérieure d'un salon lumineux" loading="lazy" decoding="async">
+            <div class="card-service-body">
+              <h3 class="card-title">Peinture intérieure</h3>
+              <p>Murs, plafonds et boiseries : préparation des supports, sous-couches et finitions adaptées à chaque pièce (mate, satinée, velours).</p>
+              <a href="#contact" class="card-service-link">Devis gratuit</a>
+            </div>
+          </article>
+          <article class="card card-service anim-fade-up anim-delay-1">
+            <img src="public/images/images-services/peinture%20eterieur.webp" width="400" height="285" alt="Façade de maison et peinture extérieure" loading="lazy" decoding="async">
+            <div class="card-service-body">
+              <h3 class="card-title">Peinture extérieure</h3>
+              <p>Façades, pignons, boiseries et menuiseries extérieures : produits résistants aux intempéries et aux UV pour une tenue dans le temps.</p>
+              <a href="#contact" class="card-service-link">Devis gratuit</a>
+            </div>
+          </article>
+          <article class="card card-service anim-fade-up anim-delay-2">
+            <img src="public/images/images-services/revetement%20murs.webp" width="400" height="285" alt="Revêtement mural et intérieur soigné" loading="lazy" decoding="async">
+            <div class="card-service-body">
+              <h3 class="card-title">Revêtement des murs</h3>
+              <p>Toile de verre, enduits décoratifs ou lambris : nous préparons et habillons vos murs pour un rendu net et durable.</p>
+              <a href="#contact" class="card-service-link">Devis gratuit</a>
+            </div>
+          </article>
+          <article class="card card-service anim-fade-up anim-delay-3">
+            <img src="public/images/images-services/pose%20de%20parquet.webp" width="400" height="285" alt="Pose de parquet et sol en bois" loading="lazy" decoding="async">
+            <div class="card-service-body">
+              <h3 class="card-title">Pose de parquets</h3>
+              <p>Massif, contrecollé ou stratifié : pose soignée, isolation phonique si besoin et finitions pour un sol harmonieux avec vos pièces.</p>
+              <a href="#contact" class="card-service-link">Devis gratuit</a>
+            </div>
+          </article>
+          <article class="card card-service anim-fade-up anim-delay-1">
+            <img src="public/images/images-services/ravalement%20facades.webp" width="400" height="285" alt="Ravalement de façade d'immeuble" loading="lazy" decoding="async">
+            <div class="card-service-body">
+              <h3 class="card-title">Ravalement de façades</h3>
+              <p>Nettoyage, réparation des fissures, traitement de l’humidité et protection : nous sécurisons et embellissons la façade de votre bâtiment.</p>
+              <a href="#contact" class="card-service-link">Devis gratuit</a>
+            </div>
+          </article>
+          <article class="card card-service anim-fade-up anim-delay-2">
+            <img src="public/images/images-services/pose%20papier%20peint.webp" width="400" height="285" alt="Pose de papier peint sur un mur" loading="lazy" decoding="async">
+            <div class="card-service-body">
+              <h3 class="card-title">Pose de papier peint</h3>
+              <p>Vinyle, intissé ou papier traditionnel : découpe précise, raccords invisibles et finitions propres pour un rendu impeccable.</p>
+              <a href="#contact" class="card-service-link">Devis gratuit</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta-call" aria-labelledby="call-title">
+      <div class="container cta-call-inner anim-fade-up">
+        <h2 id="call-title">Une question ? Appelez-nous</h2>
+        <p class="cta-call-text">Du lundi au vendredi, 8 h – 18 h. Nous établissons ensemble la suite de votre projet.</p>
+        <a href="tel:+33605642285" class="btn btn-call">06 05 64 22 85</a>
+      </div>
+    </section>
+
+    <section class="section section-reviews" id="avis" aria-labelledby="reviews-title">
+      <div class="container">
+        <h2 id="reviews-title" class="section-heading center">Avis clients</h2>
+        <div class="reviews-grid">
+          <blockquote class="card review anim-fade-up">
+            <p>« Travail irréprochable sur notre appartement haussmannien. Équipe ponctuelle, protection des sols au top et finitions nickel. »</p>
+            <footer>— Théophile Mercier, <span>Paris 11<sup>e</sup></span></footer>
+          </blockquote>
+          <blockquote class="card review anim-fade-up anim-delay-1">
+            <p>« Devis clair dès le départ. Ils ont su nous conseiller sur les couleurs du salon. Nous referons appel à eux pour la chambre. »</p>
+            <footer>— Solène Aubry, <span>Paris 15<sup>e</sup></span></footer>
+          </blockquote>
+          <blockquote class="card review anim-fade-up anim-delay-2">
+            <p>« Ravalement de façade réalisé dans les temps malgré la météo capricieuse. Communication fluide avec le chef de chantier. »</p>
+            <footer>— Ghislain Marchand, <span>Levallois-Perret</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-why" aria-labelledby="why-title">
+      <div class="container">
+        <h2 id="why-title" class="section-heading center">Pourquoi nous choisir</h2>
+        <div class="why-grid">
+          <article class="card card-why anim-fade-up">
+            <span class="card-why-icon" aria-hidden="true">
+              <svg class="card-why-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <h3 class="card-title">Artisan local</h3>
+            <p>Basés à Paris, nous intervenons rapidement en Île-de-France avec une connaissance du bâti parisien.</p>
+          </article>
+          <article class="card card-why anim-fade-up anim-delay-1">
+            <span class="card-why-icon" aria-hidden="true">
+              <svg class="card-why-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-1.5 2-2.5 4.5-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+            </span>
+            <h3 class="card-title">Matériaux pros</h3>
+            <p>Nous travaillons avec des marques reconnues pour des résultats durables et une meilleure qualité de l’air intérieur.</p>
+          </article>
+          <article class="card card-why anim-fade-up anim-delay-2">
+            <span class="card-why-icon" aria-hidden="true">
+              <svg class="card-why-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+            </span>
+            <h3 class="card-title">Chantier propre</h3>
+            <p>Protection des meubles, enlèvement des déchets et nettoyage : vous retrouvez des espaces prêts à vivre.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-communes" id="communes" aria-labelledby="communes-title">
+      <div class="container">
+        <h2 id="communes-title" class="section-heading section-heading--light center">Intervention aux alentours de Paris</h2>
+        <p class="section-communes-intro">Nous nous déplaçons régulièrement dans les communes les plus proches de la capitale pour vos travaux de peinture et de rénovation.</p>
+        <div class="communes-grid">
+          <ul class="communes-list">
+            <li>Levallois-Perret</li>
+            <li>Neuilly-sur-Seine</li>
+            <li>Boulogne-Billancourt</li>
+            <li>Issy-les-Moulineaux</li>
+            <li>Saint-Cloud</li>
+          </ul>
+          <ul class="communes-list">
+            <li>Vincennes</li>
+            <li>Saint-Mandé</li>
+            <li>Montreuil</li>
+            <li>Gentilly</li>
+            <li>Montrouge</li>
+          </ul>
+          <ul class="communes-list">
+            <li>Vanves</li>
+            <li>Clamart</li>
+            <li>Ivry-sur-Seine</li>
+            <li>Pantin</li>
+            <li>Aubervilliers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-inner anim-fade-up">
+        <h2 id="faq-title" class="section-heading center">Questions fréquentes</h2>
+        <p class="faq-intro">Les réponses aux demandes les plus courantes avant de lancer vos travaux de peinture.</p>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3 class="faq-question">Le devis est-il gratuit et sans engagement&nbsp;?</h3>
+            <div class="faq-answer">
+              <p>Oui. Après votre demande, nous fixons une visite ou un échange pour estimer les surfaces et les finitions. Vous recevez un devis détaillé sans frais : vous restez libre d’accepter ou de comparer.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-question">Combien de temps dure une intervention «&nbsp;type&nbsp;»&nbsp;?</h3>
+            <div class="faq-answer">
+              <p>Cela dépend des pièces, de l’état des murs et des séchages entre couches. Un T2 peint en grande partie peut prendre quelques jours ouvrés ; nous vous indiquons une fourchette réaliste dès le devis.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-question">Dois-je vider les pièces avant votre passage&nbsp;?</h3>
+            <div class="faq-answer">
+              <p>Les meubles doivent être éloignés du périmètre peint ou dégagés si possible. Nous protégeons sols et mobilier restant avec bâches et adhésifs adaptés ; nous précisons lors de la visite ce qui peut rester en place.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-question">Intervenez-vous le week-end ou en soirée&nbsp;?</h3>
+            <div class="faq-answer">
+              <p>Nous privilégions les horaires ouvrés pour limiter le bruit en copropriété. Des créneaux exceptionnels peuvent être étudiés selon la nature du chantier et l’accord des voisins — nous en parlons à la commande.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-col--brand">
+        <strong class="footer-logo">Peintre Paris</strong>
+        <p class="footer-desc">Peinture intérieure et finitions pour particuliers et pros, sur Paris et la petite couronne. Ravalement de façades, peinture extérieure, revêtements muraux et pose de parquet : une offre complète pour embellir et protéger votre logement ou vos locaux, avec devis détaillé et suivi de chantier.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Services</h3>
+        <ul class="footer-list">
+          <li><a href="#services">Peinture intérieure</a></li>
+          <li><a href="#services">Peinture extérieure</a></li>
+          <li><a href="#services">Revêtement des murs</a></li>
+          <li><a href="#services">Pose de parquets</a></li>
+          <li><a href="#services">Ravalement de façades</a></li>
+          <li><a href="#services">Pose de papier peint</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Liens utiles</h3>
+        <ul class="footer-list">
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Contact</h3>
+        <p class="footer-contact-line">
+          <a href="tel:+33605642285">06 05 64 22 85</a>
+        </p>
+        <p class="footer-contact-line">
+          <a href="#contact">Demande de devis</a>
+        </p>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Peintre Paris. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      var toggle = document.getElementById('header-menu-toggle');
+      var menu = document.getElementById('header-menu');
+      if (!toggle || !menu) return;
+
+      var backdrop = menu.querySelector('.header-menu-backdrop');
+
+      function openMenu() {
+        menu.removeAttribute('hidden');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.classList.add('is-open');
+        document.body.classList.add('menu-open');
+      }
+
+      function closeMenu() {
+        menu.setAttribute('hidden', '');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+      }
+
+      function isOpen() {
+        return !menu.hasAttribute('hidden');
+      }
+
+      toggle.addEventListener('click', function () {
+        if (isOpen()) closeMenu();
+        else openMenu();
+      });
+
+      if (backdrop) backdrop.addEventListener('click', closeMenu);
+
+      var closeBtn = document.getElementById('header-menu-close');
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isOpen()) closeMenu();
+      });
+    })();
+  </script>
+</body>
+</html>
