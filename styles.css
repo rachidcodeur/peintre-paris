@@ -18,7 +18,16 @@
   --shadow-glow: 0 0 60px rgba(4, 187, 255, 0.28);
   --radius-lg: 20px;
   --radius-xl: 28px;
-  --font: "Poppins", system-ui, sans-serif;
+  /* Polices natives uniquement — pas de requête réseau (perf / CLS) */
+  --font:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   /* Décalage au scroll vers les ancres (#contact, etc.) : sous le header sticky + marge */
   --scroll-anchor-offset: clamp(4.75rem, 3.25rem + 4vw, 6rem);
